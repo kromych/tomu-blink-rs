@@ -1,0 +1,22 @@
+[target.'cfg(all(target_arch = "arm", target_os = "none"))']
+# runner = "cargo dfu --vid 1209 --pid 70b1"
+runner = "./runner.sh"
+
+rustflags = [
+  "-C", "link-arg=-Tlink.x",
+
+  # Code-size optimizations.
+  #   trap unreachable can save a lot of space, but requires nightly compiler.
+  #   uncomment the next line if you wish to enable it
+  # "-Z", "trap-unreachable=no",
+
+  # Some savings
+  "-C", "inline-threshold=5",
+  "-C", "no-vectorize-loops",
+
+  # Optimize for code size, performance notwithstanding.
+  "-C", "opt-level=z",
+]
+
+[build]
+target = "thumbv6m-none-eabi"
