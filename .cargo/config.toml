@@ -1,6 +1,6 @@
 [target.'cfg(all(target_arch = "arm", target_os = "none"))']
 # runner = "cargo dfu --vid 1209 --pid 70b1"
-runner = "./runner.sh"
+runner = "python3 runner.py"
 
 rustflags = [
   "-C", "link-arg=-Tlink.x",
@@ -11,7 +11,7 @@ rustflags = [
   # "-Z", "trap-unreachable=no",
 
   # Some savings
-  "-C", "inline-threshold=5",
+  "-C", "llvm-args=--inline-threshold=5",
   "-C", "no-vectorize-loops",
 
   # Optimize for code size, performance notwithstanding.

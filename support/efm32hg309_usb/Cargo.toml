@@ -1,0 +1,18 @@
+[package]
+name = "efm32hg309-usb"
+version = "0.0.1"
+authors = ["kromych <kromych@users.noreply.github.con"]
+categories = ["embedded", "no-std", "efm32"]
+description = "DWC2 USB device driver for EFM32HG309"
+keywords = ["arm", "cortex-m"]
+license = "MIT"
+edition = "2021"
+
+[dependencies]
+cortex-m.workspace = true
+cortex-m-rt.workspace = true
+critical-section.workspace = true
+defmt.workspace = true
+portable-atomic.workspace = true
+
+efm32hg309-pac.workspace = true

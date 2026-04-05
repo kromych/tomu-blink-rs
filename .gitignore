@@ -1,4 +1,6 @@
+.vscode
 target/
 .DS_Store
 *.bin
 *.dfu
+__pycache__/runner.cpython-314.pyc

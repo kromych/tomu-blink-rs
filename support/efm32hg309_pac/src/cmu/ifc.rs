@@ -1,100 +1,78 @@
 #[doc = "Register `IFC` writer"]
-pub type W = crate::W<IFC_SPEC>;
+pub type W = crate::W<IfcSpec>;
 #[doc = "Field `HFRCORDY` writer - HFRCO Ready Interrupt Flag Clear"]
-pub type HFRCORDY_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type HfrcordyW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `HFXORDY` writer - HFXO Ready Interrupt Flag Clear"]
-pub type HFXORDY_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type HfxordyW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `LFRCORDY` writer - LFRCO Ready Interrupt Flag Clear"]
-pub type LFRCORDY_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type LfrcordyW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `LFXORDY` writer - LFXO Ready Interrupt Flag Clear"]
-pub type LFXORDY_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type LfxordyW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `AUXHFRCORDY` writer - AUXHFRCO Ready Interrupt Flag Clear"]
-pub type AUXHFRCORDY_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type AuxhfrcordyW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `CALRDY` writer - Calibration Ready Interrupt Flag Clear"]
-pub type CALRDY_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type CalrdyW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `CALOF` writer - Calibration Overflow Interrupt Flag Clear"]
-pub type CALOF_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type CalofW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `USHFRCORDY` writer - USHFRCO Ready Interrupt Flag Clear"]
-pub type USHFRCORDY_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type UshfrcordyW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `USBCHFOSCSEL` writer - USBC HF-oscillator Selected Interrupt Flag Clear"]
-pub type USBCHFOSCSEL_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type UsbchfoscselW<'a, REG> = crate::BitWriter<'a, REG>;
 impl W {
     #[doc = "Bit 0 - HFRCO Ready Interrupt Flag Clear"]
     #[inline(always)]
-    #[must_use]
-    pub fn hfrcordy(&mut self) -> HFRCORDY_W<IFC_SPEC, 0> {
-        HFRCORDY_W::new(self)
+    pub fn hfrcordy(&mut self) -> HfrcordyW<'_, IfcSpec> {
+        HfrcordyW::new(self, 0)
     }
     #[doc = "Bit 1 - HFXO Ready Interrupt Flag Clear"]
     #[inline(always)]
-    #[must_use]
-    pub fn hfxordy(&mut self) -> HFXORDY_W<IFC_SPEC, 1> {
-        HFXORDY_W::new(self)
+    pub fn hfxordy(&mut self) -> HfxordyW<'_, IfcSpec> {
+        HfxordyW::new(self, 1)
     }
     #[doc = "Bit 2 - LFRCO Ready Interrupt Flag Clear"]
     #[inline(always)]
-    #[must_use]
-    pub fn lfrcordy(&mut self) -> LFRCORDY_W<IFC_SPEC, 2> {
-        LFRCORDY_W::new(self)
+    pub fn lfrcordy(&mut self) -> LfrcordyW<'_, IfcSpec> {
+        LfrcordyW::new(self, 2)
     }
     #[doc = "Bit 3 - LFXO Ready Interrupt Flag Clear"]
     #[inline(always)]
-    #[must_use]
-    pub fn lfxordy(&mut self) -> LFXORDY_W<IFC_SPEC, 3> {
-        LFXORDY_W::new(self)
+    pub fn lfxordy(&mut self) -> LfxordyW<'_, IfcSpec> {
+        LfxordyW::new(self, 3)
     }
     #[doc = "Bit 4 - AUXHFRCO Ready Interrupt Flag Clear"]
     #[inline(always)]
-    #[must_use]
-    pub fn auxhfrcordy(&mut self) -> AUXHFRCORDY_W<IFC_SPEC, 4> {
-        AUXHFRCORDY_W::new(self)
+    pub fn auxhfrcordy(&mut self) -> AuxhfrcordyW<'_, IfcSpec> {
+        AuxhfrcordyW::new(self, 4)
     }
     #[doc = "Bit 5 - Calibration Ready Interrupt Flag Clear"]
     #[inline(always)]
-    #[must_use]
-    pub fn calrdy(&mut self) -> CALRDY_W<IFC_SPEC, 5> {
-        CALRDY_W::new(self)
+    pub fn calrdy(&mut self) -> CalrdyW<'_, IfcSpec> {
+        CalrdyW::new(self, 5)
     }
     #[doc = "Bit 6 - Calibration Overflow Interrupt Flag Clear"]
     #[inline(always)]
-    #[must_use]
-    pub fn calof(&mut self) -> CALOF_W<IFC_SPEC, 6> {
-        CALOF_W::new(self)
+    pub fn calof(&mut self) -> CalofW<'_, IfcSpec> {
+        CalofW::new(self, 6)
     }
     #[doc = "Bit 8 - USHFRCO Ready Interrupt Flag Clear"]
     #[inline(always)]
-    #[must_use]
-    pub fn ushfrcordy(&mut self) -> USHFRCORDY_W<IFC_SPEC, 8> {
-        USHFRCORDY_W::new(self)
+    pub fn ushfrcordy(&mut self) -> UshfrcordyW<'_, IfcSpec> {
+        UshfrcordyW::new(self, 8)
     }
     #[doc = "Bit 9 - USBC HF-oscillator Selected Interrupt Flag Clear"]
     #[inline(always)]
-    #[must_use]
-    pub fn usbchfoscsel(&mut self) -> USBCHFOSCSEL_W<IFC_SPEC, 9> {
-        USBCHFOSCSEL_W::new(self)
-    }
-    #[doc = r" Writes raw bits to the register."]
-    #[doc = r""]
-    #[doc = r" # Safety"]
-    #[doc = r""]
-    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
-    #[inline(always)]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.bits = bits;
-        self
+    pub fn usbchfoscsel(&mut self) -> UsbchfoscselW<'_, IfcSpec> {
+        UsbchfoscselW::new(self, 9)
     }
 }
-#[doc = "Interrupt Flag Clear Register\n\nYou can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`ifc::W`](W). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
-pub struct IFC_SPEC;
-impl crate::RegisterSpec for IFC_SPEC {
+#[doc = "Interrupt Flag Clear Register\n\nYou can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`ifc::W`](W). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct IfcSpec;
+impl crate::RegisterSpec for IfcSpec {
     type Ux = u32;
 }
 #[doc = "`write(|w| ..)` method takes [`ifc::W`](W) writer structure"]
-impl crate::Writable for IFC_SPEC {
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+impl crate::Writable for IfcSpec {
+    type Safety = crate::Unsafe;
 }
 #[doc = "`reset()` method sets IFC to value 0"]
-impl crate::Resettable for IFC_SPEC {
-    const RESET_VALUE: Self::Ux = 0;
-}
+impl crate::Resettable for IfcSpec {}

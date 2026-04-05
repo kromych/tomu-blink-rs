@@ -1,0 +1,18 @@
+[package]
+name = "tomu"
+version = "0.1.0"
+authors = ["kromych <kromych@users.noreply.github.con"]
+edition = "2021"
+keywords = ["no-std", "arm", "cortex-m", "efm32hg309", "bsp"]
+readme = "readme.md"
+description = "Board Support Package for Tomu"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+embedded-hal.workspace = true
+cortex-m.workspace = true
+cortex-m-rt.workspace = true
+critical-section.workspace = true
+
+efm32hg309-pac.workspace = true
+efm32hg309-hal.workspace = true

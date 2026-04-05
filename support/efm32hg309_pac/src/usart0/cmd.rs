@@ -1,124 +1,99 @@
 #[doc = "Register `CMD` writer"]
-pub type W = crate::W<CMD_SPEC>;
+pub type W = crate::W<CmdSpec>;
 #[doc = "Field `RXEN` writer - Receiver Enable"]
-pub type RXEN_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type RxenW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `RXDIS` writer - Receiver Disable"]
-pub type RXDIS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type RxdisW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `TXEN` writer - Transmitter Enable"]
-pub type TXEN_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type TxenW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `TXDIS` writer - Transmitter Disable"]
-pub type TXDIS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type TxdisW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `MASTEREN` writer - Master Enable"]
-pub type MASTEREN_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type MasterenW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `MASTERDIS` writer - Master Disable"]
-pub type MASTERDIS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type MasterdisW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `RXBLOCKEN` writer - Receiver Block Enable"]
-pub type RXBLOCKEN_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type RxblockenW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `RXBLOCKDIS` writer - Receiver Block Disable"]
-pub type RXBLOCKDIS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type RxblockdisW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `TXTRIEN` writer - Transmitter Tristate Enable"]
-pub type TXTRIEN_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type TxtrienW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `TXTRIDIS` writer - Transmitter Tristate Disable"]
-pub type TXTRIDIS_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type TxtridisW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `CLEARTX` writer - Clear TX"]
-pub type CLEARTX_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type CleartxW<'a, REG> = crate::BitWriter<'a, REG>;
 #[doc = "Field `CLEARRX` writer - Clear RX"]
-pub type CLEARRX_W<'a, REG, const O: u8> = crate::BitWriter<'a, REG, O>;
+pub type ClearrxW<'a, REG> = crate::BitWriter<'a, REG>;
 impl W {
     #[doc = "Bit 0 - Receiver Enable"]
     #[inline(always)]
-    #[must_use]
-    pub fn rxen(&mut self) -> RXEN_W<CMD_SPEC, 0> {
-        RXEN_W::new(self)
+    pub fn rxen(&mut self) -> RxenW<'_, CmdSpec> {
+        RxenW::new(self, 0)
     }
     #[doc = "Bit 1 - Receiver Disable"]
     #[inline(always)]
-    #[must_use]
-    pub fn rxdis(&mut self) -> RXDIS_W<CMD_SPEC, 1> {
-        RXDIS_W::new(self)
+    pub fn rxdis(&mut self) -> RxdisW<'_, CmdSpec> {
+        RxdisW::new(self, 1)
     }
     #[doc = "Bit 2 - Transmitter Enable"]
     #[inline(always)]
-    #[must_use]
-    pub fn txen(&mut self) -> TXEN_W<CMD_SPEC, 2> {
-        TXEN_W::new(self)
+    pub fn txen(&mut self) -> TxenW<'_, CmdSpec> {
+        TxenW::new(self, 2)
     }
     #[doc = "Bit 3 - Transmitter Disable"]
     #[inline(always)]
-    #[must_use]
-    pub fn txdis(&mut self) -> TXDIS_W<CMD_SPEC, 3> {
-        TXDIS_W::new(self)
+    pub fn txdis(&mut self) -> TxdisW<'_, CmdSpec> {
+        TxdisW::new(self, 3)
     }
     #[doc = "Bit 4 - Master Enable"]
     #[inline(always)]
-    #[must_use]
-    pub fn masteren(&mut self) -> MASTEREN_W<CMD_SPEC, 4> {
-        MASTEREN_W::new(self)
+    pub fn masteren(&mut self) -> MasterenW<'_, CmdSpec> {
+        MasterenW::new(self, 4)
     }
     #[doc = "Bit 5 - Master Disable"]
     #[inline(always)]
-    #[must_use]
-    pub fn masterdis(&mut self) -> MASTERDIS_W<CMD_SPEC, 5> {
-        MASTERDIS_W::new(self)
+    pub fn masterdis(&mut self) -> MasterdisW<'_, CmdSpec> {
+        MasterdisW::new(self, 5)
     }
     #[doc = "Bit 6 - Receiver Block Enable"]
     #[inline(always)]
-    #[must_use]
-    pub fn rxblocken(&mut self) -> RXBLOCKEN_W<CMD_SPEC, 6> {
-        RXBLOCKEN_W::new(self)
+    pub fn rxblocken(&mut self) -> RxblockenW<'_, CmdSpec> {
+        RxblockenW::new(self, 6)
     }
     #[doc = "Bit 7 - Receiver Block Disable"]
     #[inline(always)]
-    #[must_use]
-    pub fn rxblockdis(&mut self) -> RXBLOCKDIS_W<CMD_SPEC, 7> {
-        RXBLOCKDIS_W::new(self)
+    pub fn rxblockdis(&mut self) -> RxblockdisW<'_, CmdSpec> {
+        RxblockdisW::new(self, 7)
     }
     #[doc = "Bit 8 - Transmitter Tristate Enable"]
     #[inline(always)]
-    #[must_use]
-    pub fn txtrien(&mut self) -> TXTRIEN_W<CMD_SPEC, 8> {
-        TXTRIEN_W::new(self)
+    pub fn txtrien(&mut self) -> TxtrienW<'_, CmdSpec> {
+        TxtrienW::new(self, 8)
     }
     #[doc = "Bit 9 - Transmitter Tristate Disable"]
     #[inline(always)]
-    #[must_use]
-    pub fn txtridis(&mut self) -> TXTRIDIS_W<CMD_SPEC, 9> {
-        TXTRIDIS_W::new(self)
+    pub fn txtridis(&mut self) -> TxtridisW<'_, CmdSpec> {
+        TxtridisW::new(self, 9)
     }
     #[doc = "Bit 10 - Clear TX"]
     #[inline(always)]
-    #[must_use]
-    pub fn cleartx(&mut self) -> CLEARTX_W<CMD_SPEC, 10> {
-        CLEARTX_W::new(self)
+    pub fn cleartx(&mut self) -> CleartxW<'_, CmdSpec> {
+        CleartxW::new(self, 10)
     }
     #[doc = "Bit 11 - Clear RX"]
     #[inline(always)]
-    #[must_use]
-    pub fn clearrx(&mut self) -> CLEARRX_W<CMD_SPEC, 11> {
-        CLEARRX_W::new(self)
-    }
-    #[doc = r" Writes raw bits to the register."]
-    #[doc = r""]
-    #[doc = r" # Safety"]
-    #[doc = r""]
-    #[doc = r" Passing incorrect value can cause undefined behaviour. See reference manual"]
-    #[inline(always)]
-    pub unsafe fn bits(&mut self, bits: u32) -> &mut Self {
-        self.bits = bits;
-        self
+    pub fn clearrx(&mut self) -> ClearrxW<'_, CmdSpec> {
+        ClearrxW::new(self, 11)
     }
 }
-#[doc = "Command Register\n\nYou can [`reset`](crate::generic::Reg::reset), [`write`](crate::generic::Reg::write), [`write_with_zero`](crate::generic::Reg::write_with_zero) this register using [`cmd::W`](W). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
-pub struct CMD_SPEC;
-impl crate::RegisterSpec for CMD_SPEC {
+#[doc = "Command Register\n\nYou can [`reset`](crate::Reg::reset), [`write`](crate::Reg::write), [`write_with_zero`](crate::Reg::write_with_zero) this register using [`cmd::W`](W). See [API](https://docs.rs/svd2rust/#read--modify--write-api)."]
+pub struct CmdSpec;
+impl crate::RegisterSpec for CmdSpec {
     type Ux = u32;
 }
 #[doc = "`write(|w| ..)` method takes [`cmd::W`](W) writer structure"]
-impl crate::Writable for CMD_SPEC {
-    const ZERO_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
-    const ONE_TO_MODIFY_FIELDS_BITMAP: Self::Ux = 0;
+impl crate::Writable for CmdSpec {
+    type Safety = crate::Unsafe;
 }
 #[doc = "`reset()` method sets CMD to value 0"]
-impl crate::Resettable for CMD_SPEC {
-    const RESET_VALUE: Self::Ux = 0;
-}
+impl crate::Resettable for CmdSpec {}

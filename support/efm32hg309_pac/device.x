@@ -20,3 +20,9 @@ PROVIDE(USART0_TX = DefaultHandler);
 PROVIDE(USB = DefaultHandler);
 PROVIDE(TIMER2 = DefaultHandler);
 
+/* Toboot V2 configuration header: placed at offset 0x94 (right after vector table). */
+SECTIONS {
+    .toboot : ALIGN(4) {
+        KEEP(*(.toboot));
+    } > FLASH
+} INSERT AFTER .vector_table;

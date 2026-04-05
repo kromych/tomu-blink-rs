@@ -1,8 +1,8 @@
 [package]
 name = "efm32hg309-hal"
-authors = ["kromych <kromych@users.noreply.github.con"]
-keywords = ["no-std", "arm", "cortex-m", "efm32hg309", "hal"]
-description = "EFM32HG309 HAL"
+authors = ["chrysn <chrysn@fsfe.org>", "Nurahmadie <nurahmadie@gmail.com>", "kromych <kromych@users.noreply.github.con"]
+keywords = ["no-std", "arm", "cortex-m", "efm32hg322", "hal"]
+description = "EFM32HG322 HAL"
 license = "MIT"
 version = "0.0.1"
 edition = "2021"
