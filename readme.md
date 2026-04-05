@@ -7,7 +7,14 @@ https://tomu.im/tomu.html.
 
 ## Demo's
 
-TBD
+Demo   | Description
+------ | ---
+[`blink`](./demos/blink) | Tomu blink
+[`captouch`](./demos/captouch) | Tomu capacitive touch coin flip
+[`ledpulse`](./demos/ledpulse) | Tomu LED pulse (breathing effect)
+[`usb-cdc-demo`](./demos/usb-cdc) | Tomu USB CDC ACM echo
+[`usb-hid-demo`](./demos/usb-hid) | Tomu USB HID keyboard
+[`usb-midi-demo`](./demos/usb-midi) | Tomu USB MIDI
 
 ## Prepare
 
@@ -15,7 +22,7 @@ One-time tool installation:
 
 ```sh
 cargo install flip-link
-cargo install probe-rs --features="cli"
+cargo install probe-rs-tools --features="cli"
 cargo install cargo-binutils
 cargo install coreutils
 cargo install cargo-dfu
