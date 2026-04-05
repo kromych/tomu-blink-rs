@@ -110,7 +110,14 @@
 //!
 //! # Diagnostics
 //!
-//! If your app doesn't boot after flashing:
+//! Note that by default, Toboot **will always run** when a board is powered on.
+//! To automatically run your program at poweron, create a valid Toboot V2.0 header
+//! and set the autorun flag.
+//!
+//! This was done to make it easy to develop software, because all you need to do
+//! to load new firmware is to unplug Tomu and plug it back in.
+//!
+//! If your app doesn't boot after flashing with autorun on:
 //!
 //! 1. Check the USB device name for the reason code in parentheses.
 //! 2. **(3) BUTTON_HELD_DOWN**: The outer pads are being shorted — by a metal
